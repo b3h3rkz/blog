@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+    <title>Bernard Parah's Blog</title>
+    <link>https://bernardparah.com</link>
+    <description>Bernard Parah's thoughts</description>
+    <language>en-us</language>
+    <item>
+        <title>Your First Blog Post Title</title>
+        <link>https://bernardparah.com/first-post.html</link>
+        <description>A brief description of your first blog post</description>
+        <pubDate>Sat, 07 Sep 2024 12:00:00 GMT</pubDate>
+    </item>
+</channel>
+</rss>
