@@ -6,89 +6,86 @@
     <title>Bernard Parah's Blog</title>
     <link rel="alternate" type="application/rss+xml" title="Bernard Parah's Blog RSS Feed" href="/rss.xml">
     <style>
-        * {
-            box-sizing: border-box;
-        }
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
+    body {
+        font-family: 'Georgia', serif;
+        line-height: 1.6;
+        color: #3a2f2d;
+        background-color: #f4e9d5;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d2c6b5' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f3e5;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        border: 1px solid #d4c5a8;
+        border-radius: 5px;
+    }
+    header {
+        text-align: center;
+        border-bottom: 2px solid #8b6b4e;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    h1 {
+        color: #5c3e24;
+        font-size: 2.5em;
+        text-shadow: 1px 1px 2px #d4c5a8;
+    }
+    nav a {
+        color: #8b6b4e;
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    nav a:hover {
+        color: #5c3e24;
+    }
+    article {
+        margin-bottom: 40px;
+        padding: 20px;
+        background-color: #fdfaf5;
+        border: 1px solid #e6d9c4;
+        border-radius: 5px;
+    }
+    h2 {
+        color: #5c3e24;
+        border-bottom: 1px solid #d4c5a8;
+        padding-bottom: 10px;
+    }
+    footer {
+        text-align: center;
+        margin-top: 20px;
+        color: #8b6b4e;
+        font-size: 0.9em;
+        border-top: 2px solid #8b6b4e;
+        padding-top: 20px;
+    }
+    @media (max-width: 600px) {
         body {
-            font-family: Georgia, serif;
-            line-height: 1.6;
-            color: #2c1b0e;
-            background-color: #f9f2e3;
-            display: flex;
-            flex-direction: column;
-        }
-        .container {
-            flex: 1 0 auto;
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5e8c9;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        header {
-            text-align: center;
-            border-bottom: 2px solid #8b6b4e;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
+            font-size: 16px;
         }
         h1 {
-            color: #5c3e24;
             font-size: 2em;
-            margin-bottom: 0.5em;
         }
-        nav {
-            margin-top: 10px;
+        .container {
+            padding: 10px;
         }
         nav a {
-            color: #8b6b4e;
-            text-decoration: none;
-            margin: 0 10px;
-            display: inline-block;
+            display: block;
+            margin: 5px 0;
         }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        article {
-            margin-bottom: 40px;
-        }
-        h2 {
-            color: #5c3e24;
-        }
-        footer {
-            flex-shrink: 0;
-            text-align: center;
-            padding: 20px;
-            background-color: #f5e8c9;
-            color: #8b6b4e;
-            font-size: 0.9em;
-            border-top: 2px solid #8b6b4e;
-        }
-        @media (max-width: 600px) {
-            body {
-                font-size: 16px;
-            }
-            h1 {
-                font-size: 1.5em;
-            }
-            .container {
-                padding: 10px;
-            }
-            nav a {
-                display: block;
-                margin: 5px 0;
-            }
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
     <div class="container">
         <header>
+            <svg width="100%" height="50" viewBox="0 0 100 10" preserveAspectRatio="none">
+              <path d="M0,2 Q50,5 100,2 L100,10 L0,10 Z" fill="#d4c5a8"/>
+             </svg>
             <h1>Bernard Parah's Blog</h1>
             <nav>
                 <a href="index.html">Home</a>
@@ -97,6 +94,9 @@
                 <a href="about.html">About</a>
                 <a href="/rss.xml" type="application/rss+xml">RSS Feed</a>
             </nav>
+         <svg width="100%" height="50" viewBox="0 0 100 10" preserveAspectRatio="none">
+          <path d="M0,0 Q50,8 100,0 L100,10 L0,10 Z" fill="#d4c5a8"/>
+          </svg>
         </header>
 
         <main>
