@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernard Parah's Blog</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Georgia, serif;
+            line-height: 1.6;
+            color: #2c1b0e;
+            background-color: #f9f2e3;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            flex: 1 0 auto;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5e8c9;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #8b6b4e;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #5c3e24;
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #8b6b4e;
+            text-decoration: none;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        article {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #5c3e24;
+        }
+        footer {
+            flex-shrink: 0;
+            text-align: center;
+            padding: 20px;
+            background-color: #f5e8c9;
+            color: #8b6b4e;
+            font-size: 0.9em;
+            border-top: 2px solid #8b6b4e;
+        }
+        @media (max-width: 600px) {
+            body {
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            .container {
+                padding: 10px;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bernard Parah's Blog</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="posts.html">Posts</a>
+                <a href="archive.html">Archive</a>
+                <a href="about.html">About</a>
+                <a href="rss.xml">RSS</a>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <h2>[My latest Post Title]</h2>
+                <p><small>Published on: [Date]</small></p>
+                <p>[Excerpt goes here...]</p>
+            </article>
+            
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Bernard Parah. All rights reserved.</p>
+    </footer>
+</body>
+</html>
